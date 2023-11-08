@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primario: #eac926;
+    --secundario: #03264c;
+    --links: #1259c3;
+    --links2: #39b54a; 
+    --bg-primario: #666;
+    --bg-secundario: #ebebeb;    
+}
+
+.a {
+    text-decoration: none;
+    color: var(--links);
+}
+    
+
+.ul {
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-secundario);
+    max-width: 1080px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-top__logo {
+    width: 100px;
+
+}
+
+.nav-message {
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+
+}
+
+.banner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;  
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px; 
+}
+
+.burguer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu {
+    background-color: var(--links) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.burger-menu i {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    display: block;
+    width: 100%;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ebebeb;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.home-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+   }
+
+.article__img {
+    height: 300px;
+    width: 300px;
+}
+
+
+.product-info {
+    position: relative;
+    width: 100%;
+}
+
+.icontruck {
+    color: var(--links2);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--links2);
+    background-color: var(#ebebeb);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 1s;
+}
+
+.price-discount {
+    display: flex;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 16px;
+    color: var(--links2);
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.alineacion {
+    text-align: center;
+}
+
+.iconfooter {
+    color: var(--links);
+    font-size: 2em;
+}
+
+@media (max-width: 440px) {
+    h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .nav-bar {
+        display: none;
+    }
+    .banner__img{
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        margin: auto;
+    }
+    .nav-top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;      
+    }
+}
+
+@media (min-width: 440px) {
+    .burguer-container {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .foot-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.home-article:hover .descripcion{
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    opacity: 1;
+    box-shadow:  0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.product-info:hover .icontruck{
+    transform: rotate(-90deg);
+}
+
+.container-productInfo{
+    transition: all 0.4s ease-in;
+    
+    }
+    
+    .description{
+        bottom: 40px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+    }
+    
+    .box-products:hover .conteiner-infoProduct{
+        height: 5em;
+    }
