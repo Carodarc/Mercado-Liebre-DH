@@ -8,7 +8,7 @@ const port = 3001;
 
 app.listen(port, ()=>{
     console.log(`Servidor corriendo en http://localhost:${port}`)
-])
+})
 
 
 app.get('/', (req,res)=>{
