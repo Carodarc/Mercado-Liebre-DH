@@ -10,10 +10,8 @@ app.listen(port, ()=>{
     console.log(`Servidor corriendo en http://localhost:${port}`)
 })
 
-
 app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname, 'src', 'views', 'home.html'));
 })
-
 
 app.use(express.static(publicPath));
