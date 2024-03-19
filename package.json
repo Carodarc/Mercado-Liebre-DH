@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon -q src/app.js"
+      "start": "node app.js",
+      "dev": "nodemon -q app.js"
   },
   "author": "",
   "license": "ISC",
