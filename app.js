@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const path = require('path');
-const publicPath = path.join(__dirname, 'public');
+const publicPath = path.join(__dirname, 'src', 'public');
 
 const port = 3001;
 
