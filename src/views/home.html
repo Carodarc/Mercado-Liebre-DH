@@ -21,22 +21,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<div>
-    <img class="banner__img" src="/img/img-home-banner.jpg" alt="Banner de Ofertas">
-</div>
-
 <body>
     <header>
-        <nav class="nav-top">
-            <img class="nav-top__logo" src="/img/logo-mercado-liebre.jpg" alt="logo-mercado-liebre">
+        <div class="top">
+            <img class="top__logo" src="/img/logo-mercado-liebre.jpg" alt="logo-mercado-liebre">
             <p><input type="text" placeholder="Search..."></p><i class="fa-solid fa-magnifying-glass"></i>
-        </nav>
+        </div>
 
         <nav class="nav-message">
             <p class="message"><i class="fa-solid fa-hand-holding-dollar"></i></i>Comprá en cuotas y sin tarjeta de
                 crédito
             </p>
-            <nav class="nav-links">
+            <nav class="nav-bar">
             </nav>
             <ul>
                 <li><a href="/Offers">Ofertas</a></li>
@@ -48,13 +44,17 @@
             <ul>
                 <li><a href="/register">Creá tu Cuenta</a></li>
                 <li><a href="/login">Ingresá</a></li>
-                <li><a href="/mycart">Mis Compras</a></li>
+                <li><a href="/myCart">Mis Compras</a></li>
         </nav>
 
         <div class="burguer-container">
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
+        </div>
+
+        <div>
+            <img class="banner__img" src="/img/img-home-banner.jpg" alt="Banner de Ofertas">
         </div>
 
         <main>
@@ -65,7 +65,7 @@
                     <div class="product-info">
                         <i class="fa-solid fa-truck"></i>
                         <div class="price-discount">
-                            <p class="price">$6.770</p>
+                            <p class="price">$ 6.770</p>
                             <p class="discount">40% OFF</p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <div class="product-info">
                         <i class="fa-solid fa-truck"></i>
                         <div class="price-discount">
-                            <p class="price">$230.000</p>
+                            <p class="price">$ 230.000</p>
                             <p class="discount">20% OFF</p>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                     <div class="product-info">
                         <i class="fa-solid fa-truck"></i>
                         <div class="price-discount">
-                            <p class="price">$70.500</p>
+                            <p class="price">$ 70.500</p>
                             <p class="discount">10% OFF</p>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                     <div class="product-info">
                         <i class="fa-solid fa-truck"></i>
                         <div class="price-discount">
-                            <p class="price">$23.200</p>
+                            <p class="price">$ 23.200</p>
                             <p class="discount">5% OFF</p>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                 <div class="product-info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="price-discount">
-                        <p class="price">$6.770</p>
+                        <p class="price">$ 6.770</p>
                         <p class="discount">40% OFF</p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                 <div class="product-info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="price-discount">
-                        <p class="price">$230.000</p>
+                        <p class="price">$ 230.000</p>
                         <p class="discount">20% OFF</p>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                 <div class="product-info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="price-discount">
-                        <p class="price">$70.500</p>
+                        <p class="price">$ 70.500</p>
                         <p class="discount">10% OFF</p>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                 <div class="product-info">
                     <i class="fa-solid fa-truck"></i>
                     <div class="price-discount">
-                        <p class="price">$23.200</p>
+                        <p class="price">$ 23.200</p>
                         <p class="discount">5% OFF</p>
                     </div>
                 </div>
@@ -163,16 +163,15 @@
             </section>
         </main>
         <footer>
-            <div class="foot-container">
+            <div class="footer-container">
                 <div class="align">
                     <ul type="none">
-                        <i class="fas fa-credit-card iconfooter"> </i>
+                        <i class="fas fa-credit-card iconfooter"></i>
                         <h4>Pagá con tarjeta o en efectivo</h4>
                         <p>Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.
                             ¡Y siempre es seguro!</p>
                     </ul>
                 </div>
-
 
                 <div class="align">
                     <ul type="none">
@@ -185,7 +184,7 @@
 
                 <div class="align">
                     <ul type="none">
-                        <i class="fas fa-user-shield  iconfooter"></i>
+                        <i class="fas fa-user-shield iconfooter"></i>
                         <h4 class="align">Seguridad, de principio a fin</h4>
                         <p class="align">¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas
                             hacer, porque estás siempre protegid@.</p>
